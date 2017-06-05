@@ -238,9 +238,9 @@ func (files *indexFiles) ContentsIndex(component, arch string, udeb bool) *index
 
 		file = &indexFile{
 			parent:       files,
-			discardable:  true,
+			discardable:  false,
 			compressable: true,
-			onlyGzip:     true,
+			onlyGzip:     false,
 			signable:     false,
 			relativePath: relativePath,
 		}
